@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box { 
+            border-top: 2px white;
+            border-right: 2px white;
+            border-left: 1px lightgray;
+            border-style: ridge solid hidden solid ;
+            outline: 1px solid black;
+            background-color: rgba(211, 211, 211, 0.537);
+            padding: 0.5rem;
+            margin: 1rem;
+        }
+        a:unvisited {
+            color: rgb(84, 4, 188);
+        }
+        a:visited {
+            color: rgb(84, 4, 188);
+        }
+        a:hover, a:focus{
+            color: rgb(141, 141, 238)
+        }
+        .mail {
+            background-color: rgb(253, 251, 251);
+            padding: 0 0.25rem 0.25rem ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>Click any of the following links</p>
+        <a href="task32.html" target="_blank">Opens in new</a> |
+        <a href="task32.html" target="_self">Opens in self</a> |
+        <a href="#" target="_parent">Opens in parent</a> |
+        <a href="#body">Opens in body</a> |
+        <a class="mail" href="https://sarikav2003@gmail.com">Send email</a> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Task5</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {  
+    width: 53vw;
+    height: 80vh;
+    display: flex;
+    border: 1px dotted black;
+    flex-flow: row nowrap;
+    padding: 25px;
+    justify-content: center; 
+    background-color: rgb(205, 202, 50);
+}
+header {
+    padding: 55px 10px 10px 0;
+}
+header h2 {
+    font-size: 1.25rem;
+    width: max(190px, 3vw);
+    margin: 0.5rem;
+    background-color: white;
+    padding: 0.25rem;
+    box-shadow: 20px 0 0 black;
+}
+header a {
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.711);
+}
+a:visited {
+    color: purple;
+}
+main {
+    font-weight: 9px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    display: flex;
+    flex-flow: column wrap;
+    color: purple;
+    padding: 2rem;
+}
+h1{
+    padding: 0 0 15px 0;
+    font-family: sans-serif;
+    font-size: 2.5rem;
+}
+aside, p
+{
+    padding: 0.5rem 0 0.5rem 0;
+}
+.text1 {
+    border-bottom: 1px dotted purple;
+}
+.text2 {
+    font-weight: 9px;
+    font-style: oblique;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+    </style>
+</head>
+<body>
+    <section class="container">
+        <header>
+            <nav>
+                <div><h2><a href="#">Home page</a></h2></div>
+                <div><h2><a href="#">Musings</a></h2></div>
+                <div><h2><a href="#">My town</a></h2></div>
+                <div><h2><a href="#">Links</a></h2></div>
+            </nav>
+        </header>
+        <main>
+            <h1>My first styled page</h1>
+            <aside class="text1">
+                <p>Welcome to my style page!</p>
+                <p>It lacks images, but at least it has style. And it has links, wven if they don't go anywhere...</p>
+                <p>There should be more here, but I don't know what yet.</p>
+            </aside>
+            <aside class="text2">
+                <p>Made 5 April 2004
+                    <br>
+                    <span class="sign">by myself.</span>
+                </p>
+            </aside>    
+        </main>
+    </section>
+</body>
+</html>

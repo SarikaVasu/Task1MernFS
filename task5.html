@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-size: 1.25rem;
+        }
+        div {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        h1 {
+            margin-top: 20px;
+            color: blue;
+        }
+        table, td, th {
+            border: 2px solid black;
+            border-collapse: collapse;
+            position: relative;
+        }
+        .inpBox {
+            display: flex;
+            flex-flow: column nowrap;
+            border: 1px solid hsla(0, 0%, 0%, 0.3);
+            width: 400px
+        }
+        .radio {
+            display: block;
+            border-bottom: 2px solid black;
+        }
+        .lastrow {
+            text-align: end;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <form action="http://httpbin.org/get" method="get">
+        <div class="center">
+            <table >
+                <thead >
+                    <legend><h1><center>Registration form</center></h1></legend>
+                </thead>
+                <tr>
+                    <th><label for="firstName">First Name:</label></th>
+                    <td><input type="text" name="firstName" class="inpBox"></td>
+                </tr>
+                <tr>
+                    <th><label for="lastName">Last Name:</label></th>
+                    <td><input type="text" name="lastName" class="inpBox"></td>
+                </tr>
+                <tr>
+                    <th><label for="email">Email:</label></th>
+                    <td><input type="text" name="email" class="inpBox"></td>
+                </tr>
+                <tr>
+                    <th><label for="username">Username:</label></th>
+                    <td><input type="text" name="username" class="inpBox"></td>
+                </tr>
+                <tr>
+                    <th><label for="password">Password:</label></th>
+                    <td><input type="text" name="password" class="inpBox"></td>
+                </tr>
+                <tr>
+                    <th><label for="rePassword">Re-enter Password:</label></th>
+                    <td><input type="text" name="rePassword" class="inpBox"></td>
+                </tr>
+                <tr>
+                    <th><label for="gender">Gender:</label></th>
+                    <td>
+                        <span class="radio">
+                            <input type="radio" name="gender" id="male">Male
+                        </span>
+                        <input type="radio" name="gender" id="female">Female
+                    </td>
+                </tr>        
+                <tr>
+                    <th><label for="age">Age:</label></th>
+                    <td><input type="text" name="age" class="inpBox"></td>
+                </tr>
+                <tr>
+                    <th><label for=" phoneNumber">Phone Number:</label></th>
+                    <td><input type="text" name="phoneNumber" class="inpBox"></td>
+                </tr>
+                <tr>
+                    <th><label for="address">Address:</label></th>
+                    <td>
+                        <textarea name="address" cols="30" rows="10" class="inpBox"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="state">State</label></th>
+                    <td><input type="text" name="State" class="inpBox"></td>
+                </tr>
+                <tr>
+                    <th><label for="country">Country:</label></th>
+                    <td>
+                        <select name="country" id="country">
+                            <option value="Choose your country">Choose your country</option>
+                            <option value="India">India</option>
+                            <option value="US">US</option>
+                            <option value="UK">UK</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="lang">Languages known</label></th>
+                    <td>
+                        <input type="checkbox" name="lang" id="English">English
+                        <input type="checkbox" name="lang" id="Kannada">Kannada
+                        <input type="checkbox" name="lang" id="Hindi">Hindi
+                        <input type="checkbox" name="lang" id="Telugu">Telugu
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"> 
+                        <input type="checkbox" name="declaration" id="declaration">
+                        <label for="declaration">Hereby I declare all the given details are true</label>
+                    </td>
+                </tr>
+                <tr class="lastrow">
+                    <td colspan="2">Log in to <a href="https://ethnus.com/">Ethnus</a> website</td>
+                </tr>
+            </table>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+</body>
+</html>

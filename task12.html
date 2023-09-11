@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Task</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nowrap {
+    white-space: nowrap;
+}
+body {
+    background-color: rgba(140, 11, 63, 0.93);
+    font-size: 1.3rem;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+table {
+    width: 40%;
+    height: 70%;
+    border: 1px solid black;
+    background-color: rgba(69, 12, 12, 0.332);
+    padding: 20px 100px 10px 20px;
+}
+td:nth-child(odd) {
+    color: white;
+    padding: 0.5rem 0 0 100px;
+}
+input, select {
+    height: 1.7rem;
+    justify-content: center;
+}
+button {
+    width: 105%;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+input::placeholder {
+    padding: 0.25rem;
+    font-family: inherit;
+    color: rgba(128, 128, 128, 0.589);
+}
+.label {
+    position: relative;
+}
+.box1 {
+    width: 90%;
+}
+.textArea {
+    padding: 0.25rem;
+    font-family: inherit;
+    color: rgba(128, 128, 128, 0.368);
+}
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" name="name" class="box1" placeholder="your name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="text" name="email" class="box1" placeholder="your email"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="text" name="password" class="box1"></td>
+                </tr>
+                <tr>
+                    <td><label for="phoneNumber"><span class="nowrap">Phone Number:</span></label></td>
+                    <td><input type="text" name="phoneNumber" class="box1"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        Male:<input type="radio" name="gender" id="male" value="male" >
+                        Female:<input type="radio" name="gender" id="female" value="female"><span class="gender"></span>
+                        Other:<input type="radio" name="gender" id="otherGen" value="otherGen"><span class="gender"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="language">Language:</label></td>
+                    <td>
+                        <select name="language" id="language" class="box2">
+                            <option>Select language</option>
+                            <option value="Tamil">Tamil</option>
+                            <option value="Kannada">Kannada</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="zipCode">Zip Code:</label></td>
+                    <td><input type="text" name="zipCode" class="box1"></td>
+                </tr>
+                <tr>
+                    <td><label for="about" class="box1">About:</label></td>
+                    <td><textarea name="about" cols="26" rows="3" class="textArea" placeholder="Write about yourself..."></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" class="button">Register</button></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

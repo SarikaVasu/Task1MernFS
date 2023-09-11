@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        p {
+            display: inline;
+        }
+        .container {
+            /* border: 1px solid black; */
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+        }  
+
+        .box {
+            display: flex;
+            flex-flow: column nowrap;
+            position: absolute;
+            top: 35%;
+            min-width: 250px;
+            outline: 1px solid black;
+            outline-offset: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="box">
+            <p>
+                Lists can be nested (list inside list):&nbsp;&nbsp;
+                
+                <ul class="outer">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <ul>
+                        <li>Black tea</li>
+                        <li>Green tea</li>
+                    </ul>
+                    <li>Milk</li>
+                </ul>
+            </p>
+        </section>
+    </main>
+</body>
+</html>

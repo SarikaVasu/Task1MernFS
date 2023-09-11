@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCC_Task4</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: absolute;
+}
+section {
+    display: flex;
+
+}
+nav {
+    margin-top: 1.5rem;
+}
+div {
+    width: 15vw;
+    padding: 1rem 1rem 1rem 0;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    left: -10rem;
+}
+div:first-child {
+    background-color: rgba(37, 144, 92, 0.984);
+    position: absolute;
+    top: 2rem;
+    color: green;
+}
+div:nth-child(2) {
+    background-color: rgb(22, 134, 233);
+    position: absolute;
+    top: 6.5rem;
+}
+div:nth-child(3) {
+    background-color: rgb(219, 31, 31);
+    position: absolute;
+    top: 11rem;
+}
+div:last-child {
+    background-color: rgb(92, 91, 91);
+    position: absolute;
+    top: 15.5rem;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+div:hover {
+    left: 0;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 20px 10px 0 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1,p {
+    padding: 15px;
+}
+
+.heading {
+    font-size: 1.6rem;
+    
+}
+.line1 {
+    font-size: 1.15rem;
+}
+
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <header>
+            <nav>
+                <div><h2><a href="#">Home</a></h2></div>
+                <div><h2><a href="#">HTML</a></h2></div>
+                <div><h2><a href="#">CSS</a></h2></div>
+                <div><h2><a href="#">Bootstrap</a></h2></div>
+            </nav>
+        </header>
+        <main>
+            <h1 class="heading">Hoverable Sidenav Buttons</h1>
+            <aside>
+                <p class="line1">Hover over the buttons in the left side navigation to open them.</p>
+            </aside>
+        </main>
+    </section>
+</body>
+</html>

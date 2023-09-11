@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Task</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {  
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section {
+    width: 100vw; 
+    flex-grow: 1;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    padding: 0.25rem;
+}
+figcaption {
+    display: none;
+}
+aside {
+    display: flex;
+    flex-flow: row nowrap;
+}
+p {
+    padding: 0.4rem;
+}
+.inpBox {
+    width: 27vw;
+    height: 2rem;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.125);
+    border-right-color: white;
+}
+.inpBox::placeholder {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.474);
+    padding: 0.5rem;
+}
+.boldText {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.lightText {
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    font-weight: 20px;
+}
+.loginButton {
+    width: 27vw;
+    height: 2rem;
+    border: white;
+    background-color: rgba(7, 166, 7, 0.767);
+    color: white;
+}
+.end {
+    width: 27vw;
+    height: 3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: rgba(128, 128, 128, 0.162);
+    position: relative;
+    
+}
+.cancelButton {
+    
+    width: 4vw;   
+    height: auto;
+    margin-top: 0.4rem;
+    padding: 0.35rem;
+    background-color: rgb(249, 72, 72);
+    border-color: rgb(249, 72, 72);
+    border-radius: 3px;
+    color: white;
+}
+#forgotPassword {
+    position: absolute;
+    right: 0;
+    padding-top: 1.5rem;
+}
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="container">
+            <figure>
+                <img src="blank-profile-picture-973460_1280.webp" alt="Profile Pic" title="Profile Picture" width="150px" height="150px">
+                <figcaption>My Profile Picture</figcaption>
+            </figure>
+            <aside class="details">
+                <form action="" method="get">
+                    <p>
+                        <label for="username" class="boldText">Username</label>
+                        <br>
+                        <input type="text" name="username" placeholder="Enter Username" class="inpBox">
+                    </p>
+                    <p>
+                        <label for="password" class="boldText">Password</label>
+                        <br>
+                        <input type="text" name="password" placeholder="Enter Password" class="inpBox">
+                    </p>
+                    <p>
+                        <button type="submit" class="loginButton">Login</button>
+                    </p>
+                    <p>
+                        <input type="checkbox" value="Remember Me" name="rememberMe">
+                        <label for="rememberMe" class="lightText">Remember me</label>
+                    </p>
+                    <aside class="end">
+                        <p>
+                            <button type="reset" class="cancelButton" >Cancel</button>
+                        </p>
+                        <p class="lightText" id="forgotPassword">
+                            Forgot <a href="">password?</a>
+                        </p>
+                    </aside>
+                </form>
+            </aside>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

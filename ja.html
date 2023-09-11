@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ja</title>
+    <link rel="stylesheet" href="css/ja.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    border: 2px solid black;
+    margin: 0 0.1rem 0 0.1rem;
+}
+
+nav {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 5fr  ;
+    
+}
+
+nav {
+    background-color: rgb(194, 202, 202);
+    margin: 0.5rem 0rem 0.5rem 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    
+    display: block;
+    border-left: 1px solid blue;
+    
+    height: auto;
+    
+    padding: 0.5rem;
+}
+h2 a {  
+    text-decoration: none;
+    color: rgb(37, 37, 173);
+    border-left: blue;
+}
+
+h2:nth-child(1) {
+    width: calc(1fr-10px);
+    background-color: rgba(87, 85, 83, 0.897);
+    border-left: 1px solid white;
+    color: white;
+}
+.home {
+    color: white;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2><a href="task7.html" class="home">Home</a></h2>
+            <h2><a href="#">Java</a></h2>
+            <h2><a href="#">CSS</a></h2>
+            <h2><a href="#">HTML</a></h2>
+            <h2><a href="#">Bootstrap</a></h2>
+            <!-- <h2></h2> -->
+        </nav>
+    </header>
+</body>
+</html>

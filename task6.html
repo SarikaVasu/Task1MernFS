@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Task1</title>
+    <style>
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 100px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    background: rgb(107, 187, 187);
+    color: black;
+}
+td, th {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+div {
+    width: 10rem;
+    height: 7rem;
+    border: 5px solid rgb(171, 199, 104);
+    /* display: grid;
+    flex-flow: ;
+    justify-content: space-evenly;
+    align-items: center; */
+}
+div:nth-child(1), div:nth-child(2), div:nth-child(4){
+    border-radius: 5px;
+}
+div:nth-child(3), div:nth-child(6){
+    border-radius: 15px;
+}
+div:nth-child(5), div:nth-child(8){
+    border-radius: 3px;
+}
+div:nth-child(7)
+{
+    border-radius: 50%;
+}
+div:last-child {
+    /* border-top-left-radius: 3px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 3px; */
+    border-radius: 3px 15px 3px 15px; 
+}
+.outerflex {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.innerflex {
+    width: 45vw;
+    height: 34vh;
+    display: grid;
+    grid-template-columns: 20px 20px 20px;
+    gap: 1em 1em;
+}
+
+
+    </style>
+</head>
+<body>
+    <section class="outerflex">
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+            
+        </table>
+        <section class="innerflex">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </section>
+    
+</body>
+</html>
